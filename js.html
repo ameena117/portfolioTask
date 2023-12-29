@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const nums = [0,1];
+        var num;
+        alert(Missing(nums))
+        function Missing(nums) {
+            for (let i = 0; i <= nums.length; i++) {
+                var find;
+                console.log("i " + i)
+                for (let j = 0; j < nums.length; j++) {
+                    console.log("j " + j);
+                    console.log("num[j] " + nums[j])
+                    if (nums[j] == i) {
+                        console.log("yes " + i);
+                        find = true;
+                        break;
+                    } else {
+                        console.log("no " + i);
+                        find = false;
+                    }
+                    if (!find) {
+                        num = i;
+                    }
+                }
+                console.log("Missing " + num);
+            }
+            return num;
+        }
+
+        /*
+            len = 3
+
+                0
+                1
+                2
+                3
+                    [0]
+                    [1]
+                    [2]
+                    [3]
+
+
+         */
+
+
+    </script>
+</body>
+
+</html>
