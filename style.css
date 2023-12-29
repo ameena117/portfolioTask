@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color1: #D1884F;
+    --color2: #008AAA;
+    --color3: #3BBADB;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav #home {
+    color: var(--color1);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section img {
+    border-radius: 0 0 0 50px;
+    margin: 15px;
+    box-shadow: -15px 15px 0px 0px var(--color3);
+}
+
+section h3 {
+    color: var(--color3);
+}
+
+section h2 {
+    color: var(--color2);
+}
+
+section span {
+    color: var(--color1);
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 5px;
+    border: solid 0.5px;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0px 1px 2px var(--color3);
+}
+
+@media screen and (max-width: 770px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    section div {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    section img {
+        border-radius: 0 0 0 50px;
+        margin: 10px;
+        box-shadow: -15px 15px 0px 0px var(--color3);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}
